@@ -45,7 +45,7 @@ const FullDetails = () => {
         // Check if the current user is viewing their own profile
         setIsCurrentUser(currentUserId === userId);
 
-        const response = await axios.get(`http://localhost:5000/api/users/${userId}`, {
+        const response = await axios.get(`https://achyutab.onrender.com/api/users/${userId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -98,11 +98,11 @@ const FullDetails = () => {
 
   const fullAvatarUrl = user.avatar?.startsWith("http")
     ? user.avatar
-    : `http://localhost:5000${user.avatar}`;
+    : `https://achyutab.onrender.com${user.avatar}`;
 
   const fullResumeUrl = user.resume?.startsWith("http")
     ? user.resume
-    : `http://localhost:5000${user.resume}`;
+    : `https://achyutab.onrender.com${user.resume}`;
 
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">

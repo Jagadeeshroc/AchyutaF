@@ -157,7 +157,7 @@ export default function JobbyNavbar() {
                 currentUser?.avatar
                   ? currentUser.avatar.startsWith("http")
                     ? currentUser.avatar
-                    : `http://localhost:5000${currentUser.avatar.replace(
+                    : `https://achyutab.onrender.com${currentUser.avatar.replace(
                       /^\/Uploads/,
                       "/uploads"
                     )}`

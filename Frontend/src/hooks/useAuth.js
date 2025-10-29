@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 // Make sure this is defined, or import it from a config file
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_URL = process.env.REACT_APP_API_URL || 'https://achyutab.onrender.com/';
 
 export const useAuth = () => {
   const [authenticated, setAuthenticated] = useState(false);

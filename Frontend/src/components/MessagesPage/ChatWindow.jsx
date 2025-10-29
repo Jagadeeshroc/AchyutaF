@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Send, MessageSquarePlus, ArrowLeft } from 'lucide-react';
 import { format } from 'date-fns';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_URL = process.env.REACT_APP_API_URL || 'https://achyutab.onrender.com/';
 
 export const ChatWindow = ({
   conversation,
@@ -58,7 +58,7 @@ export const ChatWindow = ({
 
   const headerAvatarSrc = otherUser.avatar
     ? `${API_URL}${otherUser.avatar}`
-    : 'https://placeholder.co/150';
+    : 'https://i.pravatar.cc/40';
 
   return (
     <div className="flex flex-col h-full">
@@ -124,7 +124,7 @@ const MessageBubble = ({ message, currentUser }) => {
   const isSentByCurrentUser = message.sender._id === currentUser._id;
   const bubbleAvatarSrc = message.sender.avatar
     ? `${API_URL}${message.sender.avatar}`
-    : 'https://placeholder.co/150';
+    : 'https://i.pravatar.cc/40';
 
   return (
     <div className={`flex mb-2!  ${isSentByCurrentUser ? 'justify-end' : 'justify-start'}`}>

@@ -55,7 +55,7 @@ const UpdateProfileForm = ({ user, onClose }) => {
       };
 
       const response = await axios.put(
-        `http://localhost:5000/api/users/${user._id}`,
+        `https://achyutab.onrender.com/api/users/${user._id}`,
         updateData,
         {
           headers: { Authorization: `Bearer ${token}` },

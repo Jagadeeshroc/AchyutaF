@@ -25,7 +25,7 @@ export default function JobDetails() {
     setIsApplying(true);
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/jobs/${id}/apply`,
+        `https://achyutab.onrender.com/api/jobs/${id}/apply`,
         {},
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -53,7 +53,7 @@ export default function JobDetails() {
     const fetchJob = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`http://localhost:5000/api/jobs/${id}`);
+        const response = await axios.get(`https://achyutab.onrender.com/api/jobs/${id}`);
         if (!response.data) {
           throw new Error('Job not found');
         }
@@ -133,7 +133,7 @@ export default function JobDetails() {
       return avatar;
     }
     const normalizedPath = avatar.replace(/^\/[Uu]ploads/, '/Uploads');
-    const fullUrl = `http://localhost:5000${normalizedPath}`;
+    const fullUrl = `https://achyutab.onrender.com${normalizedPath}`;
     console.log('Constructed avatar URL:', fullUrl);
     return fullUrl;
   };

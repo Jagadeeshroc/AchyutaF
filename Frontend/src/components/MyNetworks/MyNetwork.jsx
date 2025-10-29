@@ -16,7 +16,7 @@ import TabNavigation from "./TabNavigation";
 import UserDetailModal from "./UserDetailModal";
 
 
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "https://achyutab.onrender.com/";
 
 const MyNetwork = () => {
   const [searchTerm, ] = useState("");

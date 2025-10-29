@@ -14,7 +14,7 @@ export default function JobReviews({ jobId }) {
     const fetchReviews = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`http://localhost:5000/api/${jobId}/reviews`, {
+        const response = await axios.get(`https://achyutab.onrender.com/api/${jobId}/reviews`, {
           validateStatus: function (status) {
             return status < 500; // Don't throw error for 404
           }
@@ -47,7 +47,7 @@ export default function JobReviews({ jobId }) {
 
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/${jobId}/reviews`,
+        `https://achyutab.onrender.com/api/${jobId}/reviews`,
         { content: newReview },
         { headers: { Authorization: `Bearer ${token}` } }
       );

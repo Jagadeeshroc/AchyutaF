@@ -8,7 +8,7 @@ import axios from "axios";
 import { useSocket } from "../context/SocketContext";
 import './index.css';
 
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://achyutab.onrender.com/';
 
 const Notifications = () => {
   const [notifications, setNotifications] = useState([]);

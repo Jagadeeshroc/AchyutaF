@@ -90,7 +90,7 @@ const DiscoverPostCard = memo(({ post, onClick }) => (
   </motion.div>
 ));
 
-const Home = ({ apiBaseUrl = 'http://localhost:5000' }) => {
+const Home = ({ apiBaseUrl = 'https://achyutab.onrender.com/' }) => {
   const navigate = useNavigate();
   const [shouldRedirect, setShouldRedirect] = useState(!localStorage.getItem('token'));
   const [discoverPosts, setDiscoverPosts] = useState([]);

@@ -2,7 +2,7 @@
 import React from "react";
 import { format } from "date-fns";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+const API_URL = process.env.REACT_APP_API_URL || "https://achyutab.onrender.com/";
 
 const getOtherUser = (participants, currentUser) => {
   if (!participants || !currentUser) return null;

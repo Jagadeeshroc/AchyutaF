@@ -14,7 +14,7 @@ export default function Dashboard() {
   // Fetch all jobs
   const fetchJobs = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/jobs/');
+      const res = await axios.get('https://achyutab.onrender.com/api/jobs/');
       const jobsWithType = res.data.map(job => ({
         ...job,
         type: job.type || 'Full-time',
@@ -46,7 +46,7 @@ export default function Dashboard() {
     if (!confirmDelete) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/jobs/${jobId}`, {
+      await axios.delete(`https://achyutab.onrender.com/api/jobs/${jobId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

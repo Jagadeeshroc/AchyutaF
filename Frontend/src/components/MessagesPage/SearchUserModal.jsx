@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { X, Search } from 'lucide-react';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_URL = process.env.REACT_APP_API_URL || 'https://achyutab.onrender.com/';
 
 export const SearchUserModal = ({ isOpen, onClose, users, onUserSelect }) => {
   const [searchTerm, setSearchTerm] = useState('');

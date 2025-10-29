@@ -23,7 +23,7 @@ const LoginPage = () => {
     setError('');
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/auth/login',
+        'https://achyutab.onrender.com/api/auth/login',
         formData
       );
       const { token, user } = response.data;

@@ -10,7 +10,7 @@ import { SearchUserModal } from './SearchUserModal';
 import { ConversationList } from './ConversationList';
 import { ChatWindow } from './ChatWindow';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_URL = process.env.REACT_APP_API_URL || 'https://achyutab.onrender.com/';
 
 const MessagingAdvanced = () => {
   // --- 1. CALL ALL HOOKS FIRST ---

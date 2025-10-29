@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://achyutab.onrender.com/",
 });
 
 // Set the Authorization header for all requests

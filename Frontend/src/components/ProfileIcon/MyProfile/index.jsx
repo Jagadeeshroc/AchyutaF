@@ -31,7 +31,7 @@ const MyProfile = () => {
 
         if (!userId) throw new Error("User ID missing");
 
-        const response = await axios.get(`http://localhost:5000/api/users/${userId}`, {
+        const response = await axios.get(`https://achyutab.onrender.com/api/users/${userId}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 

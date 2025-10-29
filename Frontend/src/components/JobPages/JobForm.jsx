@@ -160,10 +160,10 @@ console.log("🔐 Config:", config);
 try {
   if (initialData.id) {
     console.log("🛠 PUT request triggered");
-    await axios.put(`http://localhost:5000/api/jobs/${initialData.id}`, payload, config);
+    await axios.put(`https://achyutab.onrender.com/api/jobs/${initialData.id}`, payload, config);
   } else {
     console.log("🆕 POST request triggered");
-    await axios.post('http://localhost:5000/api/jobs', payload, config);
+    await axios.post('https://achyutab.onrender.com/api/jobs', payload, config);
   }
 
   console.log("✅ Job submitted successfully");

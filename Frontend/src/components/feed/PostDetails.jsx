@@ -8,7 +8,7 @@ import {
 } from 'react-icons/fa';
 import Avatar from '../ui/Avatar';
 
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://achyutab.onrender.com/';
 
 // Reusable PostHeader subcomponent
 const PostHeader = ({ user, createdAt, className = '', renderName }) => (

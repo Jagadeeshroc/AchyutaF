@@ -30,7 +30,7 @@ const JobEdit = () => {
   useEffect(() => {
     const fetchJob = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/jobs/${id}`);
+        const response = await axios.get(`https://achyutab.onrender.com/api/jobs/${id}`);
         setJob({
           ...response.data,
           deadline: response.data.deadline ? new Date(response.data.deadline).toISOString().split('T')[0] : ''
@@ -78,7 +78,7 @@ const JobEdit = () => {
     }
 
     try {
-      await axios.put(`http://localhost:5000/api/jobs/${id}`, job, {
+      await axios.put(`https://achyutab.onrender.com/api/jobs/${id}`, job, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setSuccess('Job updated successfully!');
@@ -98,7 +98,7 @@ const JobEdit = () => {
     }
 
     try {
-      await axios.delete(`http://localhost:5000/api/jobs/${id}`, {
+      await axios.delete(`https://achyutab.onrender.com/api/jobs/${id}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setSuccess('Job deleted successfully!');

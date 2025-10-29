@@ -21,7 +21,7 @@ export const SocketProvider = ({ children }) => {
       return;
     }
 
-    const newSocket = io('http://localhost:5000', {
+    const newSocket = io('https://achyutab.onrender.com/', {
       withCredentials: true,
       transports: ['websocket'],
       query: { userId }, // optional, but useful

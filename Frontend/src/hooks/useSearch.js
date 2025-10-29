@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-export const useSearch = (searchTerm, apiBaseUrl = 'http://localhost:5000') => {
+export const useSearch = (searchTerm, apiBaseUrl = 'https://achyutab.onrender.com/') => {
   const navigate = useNavigate();
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);

@@ -103,7 +103,7 @@ const RegisterForm = () => {
 
       console.log('FormData entries:', Object.fromEntries(formDataToSend));
 
-      const response = await axios.post('http://localhost:5000/api/auth/register', formDataToSend, {
+      const response = await axios.post('https://achyutab.onrender.com/api/auth/register', formDataToSend, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
 

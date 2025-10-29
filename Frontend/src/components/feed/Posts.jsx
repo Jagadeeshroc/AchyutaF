@@ -7,7 +7,7 @@ import {
   FaImage, FaTimes, FaSpinner, FaUsers, FaCompass
 } from 'react-icons/fa';
 
-const Posts = ({ apiBaseUrl = 'http://localhost:5000', className = '' }) => {
+const Posts = ({ apiBaseUrl = 'https://achyutab.onrender.com/', className = '' }) => {
   const navigate = useNavigate();
   const [followingPosts, setFollowingPosts] = useState([]);
   const [discoverPosts, setDiscoverPosts] = useState([]);
