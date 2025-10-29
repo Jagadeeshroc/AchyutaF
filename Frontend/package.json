@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "vite preview --host 0.0.0.0 --port $PORT",
+    "start": "serve -s dist -l $PORT",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -47,6 +47,7 @@
     "react-toastify": "^11.0.5",
     "react-tooltip": "^5.29.1",
     "sass": "^1.89.1",
+    "serve": "^14.2.3",  
     "slick-carousel": "^1.8.1",
     "socket.io-client": "^4.8.1",
     "styled-components": "^6.1.19",
