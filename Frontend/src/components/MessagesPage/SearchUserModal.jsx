@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { X, Search } from 'lucide-react';
 import.meta.env.VITE_API_BASE_URL
-const API_URL =  || 'https://achyutab.onrender.com/';
+const API_URL = import.meta.env.VITE_API_URL || 'https://achyutab.onrender.com/';
 
 export const SearchUserModal = ({ isOpen, onClose, users, onUserSelect }) => {
   const [searchTerm, setSearchTerm] = useState('');

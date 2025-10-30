@@ -9,7 +9,7 @@ export const getFullImageUrl = (imagePath) => {
   
   // If it starts with /, prepend the backend URL
   if (imagePath.startsWith('/')) {import.meta.env.VITE_API_BASE_URL
-    const baseUrl =  || 'https://achyutab.onrender.com/';
+    const baseUrl = import.meta.env.VITE_API_URL || 'https://achyutab.onrender.com/';
     return `${baseUrl}${imagePath}`;
   }
   
