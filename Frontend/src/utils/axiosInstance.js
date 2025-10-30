@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || 'https://achyutab.onrender.com/',
+  baseURL: import.meta.env.VITE_API_BASE_URL || 'https://achyutab.onrender.com/',
   timeout: 30000,
 });
 

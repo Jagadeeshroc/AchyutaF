@@ -32,7 +32,7 @@ const getImageUrl = (imagePath, category = 'general') => {
     filename = imagePath;
   }
   
-  const baseUrl = process.env.REACT_APP_API_URL || 'https://achyutab.onrender.com/';
+  const baseUrl = import.meta.env.VITE_API_BASE_URL || 'https://achyutab.onrender.com/';
   return `${baseUrl}/uploads/freelance/${filename}`;
 };
 

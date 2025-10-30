@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Send, MessageSquarePlus, ArrowLeft } from 'lucide-react';
 import { format } from 'date-fns';
 
-const API_URL = process.env.REACT_APP_API_URL || 'https://achyutab.onrender.com/';
+const API_URL = import.meta.env.VITE_API_BASE_URL || 'https://achyutab.onrender.com/';
 
 export const ChatWindow = ({
   conversation,
